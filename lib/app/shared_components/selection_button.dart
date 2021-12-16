@@ -137,7 +137,7 @@ class _Button extends StatelessWidget {
             width: 30,
             padding: const EdgeInsets.all(5),
             decoration: const BoxDecoration(
-              color: Colors.orange,
+              color: Colors.blue,
               borderRadius: BorderRadius.only(
                 bottomLeft: Radius.circular(10),
                 bottomRight: Radius.circular(10),
@@ -146,7 +146,7 @@ class _Button extends StatelessWidget {
             ),
             alignment: Alignment.center,
             child: Text(
-              (data.totalNotif! >= 100) ? "99+" : "${data.totalNotif}",
+              (data.totalNotif! >= 100) ? "12+" : "${data.totalNotif}",
               style: const TextStyle(
                 color: Colors.white,
                 fontSize: 10,

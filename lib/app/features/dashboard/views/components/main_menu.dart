@@ -21,7 +21,7 @@ class _MainMenu extends StatelessWidget {
           activeIcon: EvaIcons.bell,
           icon: EvaIcons.bellOutline,
           label: "Notifications",
-          totalNotif: 100,
+          totalNotif: 40,
         ),
         SelectionButtonData(
           activeIcon: EvaIcons.checkmarkCircle2,
@@ -33,6 +33,11 @@ class _MainMenu extends StatelessWidget {
           activeIcon: EvaIcons.settings,
           icon: EvaIcons.settingsOutline,
           label: "Settings",
+        ),
+        SelectionButtonData(
+          activeIcon: EvaIcons.person,
+          icon: EvaIcons.personOutline,
+          label: "User",
         ),
       ],
       onSelected: onSelected,

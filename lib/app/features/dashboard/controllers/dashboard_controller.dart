@@ -4,14 +4,14 @@ class DashboardController extends GetxController {
   final scafoldKey = GlobalKey<ScaffoldState>();
 
   final dataProfil = const UserProfileData(
-    image: AssetImage(ImageRasterPath.man),
-    name: "Firgia",
+    image: AssetImage(ImageRasterPath.bebe),
+    name: "Francisco Estrada",
     jobDesk: "Project Manager",
   );
 
-  final member = ["Avril Kimberly", "Michael Greg"];
+  final member = ["Javier Alejandro", "Cristel Sofia", "Oliver Gabriel"];
 
-  final dataTask = const TaskProgressData(totalTask: 5, totalCompleted: 1);
+  final dataTask = const TaskProgressData(totalTask: 5, totalCompleted: 2);
 
   final taskInProgress = [
     CardTaskData(
@@ -52,8 +52,9 @@ class DashboardController extends GetxController {
       editDate: DateTime.now().add(-const Duration(days: 50)),
     ),
     const ListTaskAssignedData(
-      icon: Icon(EvaIcons.colorPalette, color: Colors.blue),
+      icon: Icon(EvaIcons.colorPalette, color: Colors.black),
       label: "UI UX ",
+      assignTo: "Francisco Estrada",
       jobDesk: "Design",
     ),
     const ListTaskAssignedData(
@@ -114,16 +115,40 @@ class DashboardController extends GetxController {
 
   void onPressedProfil() {}
 
-  void onSelectedMainMenu(int index, SelectionButtonData value) {}
-  void onSelectedTaskMenu(int index, String label) {}
+  void onSelectedMainMenu(int index, SelectionButtonData value) {
+    print(index);
+    print(value.label);
+  }
 
-  void searchTask(String value) {}
+  void onSelectedTaskMenu(int index, String label) {
+    print(index);
+    print(label);
+  }
 
-  void onPressedTask(int index, ListTaskAssignedData data) {}
-  void onPressedAssignTask(int index, ListTaskAssignedData data) {}
-  void onPressedMemberTask(int index, ListTaskAssignedData data) {}
+  void searchTask(String value) {
+    print(value);
+  }
+
+  void onPressedTask(int index, ListTaskAssignedData data) {
+    print(index);
+    print(data.label);
+  }
+
+  void onPressedAssignTask(int index, ListTaskAssignedData data) {
+    print(index);
+    print(data.label);
+  }
+
+  void onPressedMemberTask(int index, ListTaskAssignedData data) {
+    print(index);
+    print(data.label);
+  }
+
   void onPressedCalendar() {}
-  void onPressedTaskGroup(int index, ListTaskDateData data) {}
+  void onPressedTaskGroup(int index, ListTaskDateData data) {
+    print(index);
+    print(data.label);
+  }
 
   void openDrawer() {
     if (scafoldKey.currentState != null) {

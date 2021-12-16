@@ -35,7 +35,7 @@ class _TaskInProgress extends StatelessWidget {
   Color _getSequenceColor(int index) {
     int val = index % 4;
     if (val == 3) {
-      return Colors.indigo;
+      return Colors.black;
     } else if (val == 2) {
       return Colors.grey;
     } else if (val == 1) {

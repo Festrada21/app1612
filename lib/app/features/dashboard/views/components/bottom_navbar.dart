@@ -35,6 +35,11 @@ class _BottomNavbarState extends State<_BottomNavbar> {
           icon: Icon(EvaIcons.settingsOutline),
           label: "Settings",
         ),
+        BottomNavigationBarItem(
+          activeIcon: Icon(EvaIcons.person),
+          icon: Icon(EvaIcons.personOutline),
+          label: "Members",
+        ),
       ],
       selectedItemColor: Theme.of(context).primaryColor,
       unselectedItemColor: Theme.of(context).primaryColor.withOpacity(.5),

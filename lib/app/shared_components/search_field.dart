@@ -16,6 +16,7 @@ class SearchField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      autofocus: true,     
       controller: controller,
       decoration: InputDecoration(
         prefixIcon: const Icon(EvaIcons.search),

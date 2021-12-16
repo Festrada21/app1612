@@ -12,10 +12,10 @@ class _TaskMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return SimpleSelectionButton(
       data: const [
-        "Directory",
-        "Onboarding",
-        "Offboarding",
-        "Time-off",
+        "Datos",
+        "Registros",
+        "Test",
+        "Test2",
       ],
       onSelected: onSelected,
     );

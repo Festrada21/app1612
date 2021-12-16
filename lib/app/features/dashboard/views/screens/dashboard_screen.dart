@@ -1,6 +1,9 @@
 library dashboard;
 
+import 'package:daily_task/app/config/routes/app_pages.dart';
 import 'package:daily_task/app/constans/app_constants.dart';
+import 'package:daily_task/app/features/dashboard/views/screens/Auth/login_screen.dart';
+import 'package:daily_task/app/features/dashboard/views/screens/pages/task_screen.dart';
 import 'package:daily_task/app/shared_components/card_task.dart';
 import 'package:daily_task/app/shared_components/header_text.dart';
 import 'package:daily_task/app/shared_components/list_task_assigned.dart';

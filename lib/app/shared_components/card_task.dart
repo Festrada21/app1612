@@ -2,6 +2,7 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:daily_task/app/utils/helpers/app_helpers.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class CardTaskData {
   final String label;
@@ -141,7 +142,14 @@ class CardTask extends StatelessWidget {
 
   Widget _doneButton() {
     return ElevatedButton.icon(
-      onPressed: () {},
+      onPressed: () {
+        Fluttertoast.showToast(
+          msg: 'Realizado con Exito',
+          gravity: ToastGravity.CENTER,
+          webPosition: 'center',
+          timeInSecForIosWeb: 1,
+        );
+      },
       style: ElevatedButton.styleFrom(
         primary: onPrimary,
         onPrimary: primary,
