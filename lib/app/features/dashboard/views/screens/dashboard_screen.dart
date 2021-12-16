@@ -1,9 +1,7 @@
 library dashboard;
 
-import 'package:daily_task/app/config/routes/app_pages.dart';
+
 import 'package:daily_task/app/constans/app_constants.dart';
-import 'package:daily_task/app/features/dashboard/views/screens/Auth/login_screen.dart';
-import 'package:daily_task/app/features/dashboard/views/screens/pages/task_screen.dart';
 import 'package:daily_task/app/shared_components/card_task.dart';
 import 'package:daily_task/app/shared_components/header_text.dart';
 import 'package:daily_task/app/shared_components/list_task_assigned.dart';
@@ -17,6 +15,7 @@ import 'package:daily_task/app/shared_components/task_progress.dart';
 import 'package:daily_task/app/shared_components/user_profile.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:daily_task/app/utils/helpers/app_helpers.dart';
 import 'package:intl/intl.dart';
